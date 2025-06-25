@@ -1,0 +1,45 @@
+<div class="page__hero--overlay"
+  style="background-color: #000; background-image: linear-gradient(45deg, rgba(0,255,65,0.1) 0%, rgba(26,26,46,0.9) 100%), url('{{ page.header.image | relative_url }}');">
+  <div class="wrapper">
+    <h1 class="page__title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+    {% if page.excerpt %}
+      <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div id="main" role="main">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        <!-- Course Progress Widget -->
+        {% if page.course_progress %}
+        <div class="course-progress-widget">
+          <h3>📚 Course Progress</h3>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {{ page.course_progress }}%;">
+              {{ page.course_progress }}% Complete
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        {{ content }}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+        {% include page__date.html %}
+      </footer>
+    </div>
+  </article>
+</div>
