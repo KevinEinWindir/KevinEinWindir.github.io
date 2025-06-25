@@ -1,0 +1,40 @@
+---
+layout: home
+author_profile: true
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/hero-bg.jpg
+  actions:
+    - label: "Start Reading"
+      url: "/posts/"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Following my 5-year journey from Computer Science student to cybersecurity expert through SANS-equivalent self-study. Currently focusing on penetration testing and cloud security."
+intro: 
+  - excerpt: 'This blog documents my complete transformation into a cybersecurity professional, sharing resources, progress, and original research along the way.'
+feature_row:
+  - image_path: assets/images/courses-teaser.jpg
+    title: "Course Progress"
+    excerpt: "Track my journey through SANS-equivalent bachelor's and master's curriculum"
+    url: "/courses/"
+    btn_label: "View Progress"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/projects-teaser.jpg
+    title: "Security Projects"
+    excerpt: "Tools, scripts, and applications I'm building throughout my studies"
+    url: "/projects/"
+    btn_label: "See Projects"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/research-teaser.jpg
+    title: "Research & Analysis"
+    excerpt: "Original cybersecurity research, white papers, and industry analysis"
+    url: "/research/"
+    btn_label: "Read Research"
+    btn_class: "btn--primary"
+---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+{% include course-progress.html %}
