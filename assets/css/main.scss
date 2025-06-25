@@ -1,1 +1,122 @@
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
 
+/* Custom Cybersecurity Theme */
+
+/* Matrix-style background effect (subtle) */
+body {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  background-attachment: fixed;
+}
+
+/* Header styling */
+.masthead {
+  background: rgba(15, 15, 35, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #00ff41;
+}
+
+/* Navigation links */
+.greedy-nav a {
+  color: #00ff41 !important;
+  transition: all 0.3s ease;
+}
+
+.greedy-nav a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+/* Post titles */
+.archive__item-title {
+  color: #00ff41;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+/* Code blocks with cyber feel */
+.highlight {
+  background: #0d1117 !important;
+  border: 1px solid #00ff41;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+/* Buttons */
+.btn {
+  background: linear-gradient(45deg, #00ff41, #00cc33);
+  border: none;
+  color: #000;
+  text-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 65, 0.4);
+}
+
+/* Tags */
+.page__taxonomy .page__taxonomy-item {
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid #00ff41;
+  color: #00ff41;
+}
+
+/* Sidebar author profile */
+.sidebar .author__avatar img {
+  border: 3px solid #00ff41;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+/* Progress bars for course completion */
+.progress-bar {
+  background: #1a1a2e;
+  border: 1px solid #00ff41;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #00ff41, #00cc33);
+  height: 100%;
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Glitch effect for main title */
+.site-title {
+  position: relative;
+  color: #00ff41;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page__content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .masthead {
+    background: rgba(15, 15, 35, 0.98);
+  }
+}
