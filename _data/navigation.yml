@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "Course Progress"
+    url: /courses/
+  - title: "Projects"  
+    url: /projects/
+  - title: "Research"
+    url: /research/
+  - title: "Resources"
+    url: /resources/
+  - title: "About"
+    url: /about/
