@@ -1,40 +1,258 @@
 ---
-layout: home
-author_profile: true
+layout: splash
+author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/hero-bg.jpg
+  overlay_image: /assets/images/hero-cyber.jpg
   actions:
-    - label: "Start Reading"
+    - label: "Follow My Journey"
       url: "/posts/"
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Following my 5-year journey from Computer Science student to cybersecurity expert through SANS-equivalent self-study. Currently focusing on penetration testing and cloud security."
+      class: "btn--primary btn--large"
+  caption: "Transforming passion into expertise through systematic learning"
+excerpt: "From Computer Science student to cybersecurity expert through a rigorous 5-year self-study program equivalent to SANS Bachelor's + Master's degrees."
+
 intro: 
-  - excerpt: 'This blog documents my complete transformation into a cybersecurity professional, sharing resources, progress, and original research along the way.'
+  - excerpt: 'Join me as I document every step of this ambitious journey, sharing knowledge, building tools, and contributing to the cybersecurity community.'
+
 feature_row:
-  - image_path: assets/images/courses-teaser.jpg
-    title: "Course Progress"
-    excerpt: "Track my journey through SANS-equivalent bachelor's and master's curriculum"
+  - image_path: /assets/images/mission-icon.png
+    alt: "mission"
+    title: "🎯 The Mission"
+    excerpt: "Transform from CS student to cybersecurity expert through systematic self-study, focusing on penetration testing and cloud security."
+    url: "/about/"
+    btn_label: "Learn More"
+    btn_class: "btn--primary"
+    
+  - image_path: /assets/images/journey-icon.png
+    alt: "journey"
+    title: "🚀 The Journey"
+    excerpt: "5 years, 19 courses, $9,400 investment vs $90,000+ for traditional SANS education. Building expertise while documenting everything."
     url: "/courses/"
     btn_label: "View Progress"
     btn_class: "btn--primary"
-  - image_path: /assets/images/projects-teaser.jpg
-    title: "Security Projects"
-    excerpt: "Tools, scripts, and applications I'm building throughout my studies"
+    
+  - image_path: /assets/images/impact-icon.png
+    alt: "impact"
+    title: "💡 The Impact"
+    excerpt: "Creating resources for future self-learners, building security tools, and contributing original research to the cybersecurity field."
     url: "/projects/"
     btn_label: "See Projects"
     btn_class: "btn--primary"
-  - image_path: /assets/images/research-teaser.jpg
-    title: "Research & Analysis"
-    excerpt: "Original cybersecurity research, white papers, and industry analysis"
-    url: "/research/"
-    btn_label: "Read Research"
-    btn_class: "btn--primary"
+
+challenge_row:
+  - title: "The Challenge"
+    excerpt: "**Traditional Path:** SANS Bachelor's + Master's = ~$90,000<br>**My Path:** Self-study with equivalent education = ~$9,400<br><br>Proving that world-class cybersecurity education is achievable through dedication, systematic learning, and community support."
+    
+philosophy_row:
+  - title: "Learning Philosophy"
+    excerpt: "**Document Everything:** Every course, every lab, every breakthrough and setback<br>**Share Knowledge:** Create resources that help others follow a similar path<br>**Build Practical Skills:** Focus on hands-on experience and real-world applications<br>**Contribute Back:** Develop tools, research, and insights for the community"
 ---
+
+<style>
+.hero-section {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #00ff41;
+  text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5em;
+  color: #cccccc;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.stats-highlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+  padding: 40px;
+  background: rgba(0, 255, 65, 0.05);
+  border: 2px solid #00ff41;
+  border-radius: 15px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #00ff41;
+  display: block;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.mission-statement {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 60px 40px;
+  margin: 50px 0;
+  border-radius: 20px;
+  border: 2px solid #00ff41;
+  text-align: center;
+}
+
+.mission-text {
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight-box {
+  background: rgba(0, 255, 65, 0.1);
+  border-left: 5px solid #00ff41;
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+
+.typing-effect::after {
+  content: "_";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-section {
+  background: linear-gradient(45deg, #00ff41, #00cc33);
+  color: #000000;
+  padding: 50px 40px;
+  margin: 50px 0;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-text {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn-custom {
+  background: #000000;
+  color: #00ff41;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #000000;
+}
+
+.btn-custom:hover {
+  background: transparent;
+  color: #000000;
+  border-color: #000000;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.5em; }
+  .hero-subtitle { font-size: 1.2em; }
+  .stats-highlight { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .mission-statement { padding: 40px 20px; }
+}
+</style>
+
+<div class="hero-section">
+  <div class="wrapper">
+    <h1 class="hero-title typing-effect">Kevin's Cybersecurity Journey</h1>
+    <p class="hero-subtitle">Transforming from CS student to security expert through systematic self-study</p>
+  </div>
+</div>
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
-{% include course-progress.html %}
+<div class="stats-highlight">
+  <div class="stat-item">
+    <span class="stat-number">5</span>
+    <span class="stat-label">Years Committed</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">19</span>
+    <span class="stat-label">SANS-Equivalent Courses</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">$9,400</span>
+    <span class="stat-label">Total Investment</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-number">$80,600</span>
+    <span class="stat-label">Money Saved vs SANS</span>
+  </div>
+</div>
+
+<div class="mission-statement">
+  <h2 style="color: #00ff41; font-size: 2.5em; margin-bottom: 30px;">The Mission</h2>
+  <div class="mission-text">
+    <p>I'm embarking on an ambitious 5-year journey to master cybersecurity through systematic self-study, proving that world-class education is achievable outside traditional institutions.</p>
+    
+    <p>My focus areas are <strong>penetration testing</strong> and <strong>cloud security</strong> - two of the most in-demand and critical skills in modern cybersecurity.</p>
+    
+    <p>This isn't just about personal growth. I'm documenting every step, sharing resources, building tools, and conducting original research to help others follow a similar path.</p>
+  </div>
+</div>
+
+<div class="highlight-box">
+  {% include feature_row id="challenge_row" type="left" %}
+</div>
+
+<div class="highlight-box">
+  {% include feature_row id="philosophy_row" type="right" %}
+</div>
+
+<div class="cta-section">
+  <h2 class="cta-title">Join the Journey</h2>
+  <p class="cta-text">Follow along as I transform from student to expert, one course at a time.</p>
+  <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+    <a href="/posts/" class="btn-custom">📖 Read Blog Posts</a>
+    <a href="/courses/" class="btn-custom">📊 Track Progress</a>
+    <a href="/projects/" class="btn-custom">🛠️ View Projects</a>
+    <a href="/about/" class="btn-custom">👋 About Me</a>
+  </div>
+</div>
+
+## Recent Posts
