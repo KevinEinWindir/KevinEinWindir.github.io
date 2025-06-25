@@ -1,57 +1,46 @@
 # Site Settings
-title: "Kevin - Cybersecurity Journey"
-description: "SANS Self-Study: From CS Student to Security Expert"
+title: "Kevin.exe - Cybersecurity Journey"
+description: "5-Year SANS-Equivalent Self-Study: From CS Student to Security Expert"
 url: "https://KevinEinWindir.github.io"
 baseurl: ""
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "dark" # Options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark"  # Changed to dark theme
 
 # Site Author
 author:
   name: "Kevin"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Computer Science student documenting my journey through SANS-equivalent cybersecurity education"
-  location: "United States"
+  bio: "CS Student → Security Expert | Documenting my SANS-equivalent cybersecurity journey"
+  location: "United States 🇺🇸"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/KevinEinWindir"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "#"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+# Additional settings for better styling
+teaser: "/assets/images/default-teaser.jpg"
+logo: "/assets/images/logo.png"
+masthead_title: "Kevin.exe"
 
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Search
+search: true
 
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      toc: true
-      toc_sticky: true
+# Comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "your-disqus-shortname"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "your-tracking-id"
